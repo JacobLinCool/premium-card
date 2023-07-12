@@ -71,19 +71,19 @@
 	style="transform: {$transform}; font-family: '{font}', cursive;"
 >
 	<div class="pointer-events-none absolute left-0 top-0 p-4">
-		<div class="text-lg text-amber-400/80 drop-shadow-md">{membership}</div>
+		<div class="text-lg text-zinc-400/80 drop-shadow-md sepia">{membership}</div>
 	</div>
 
 	<div class="pointer-events-none flex w-full items-center justify-center gap-4 p-4">
-		<div class="flex-1 text-right text-3xl text-amber-400 drop-shadow-md">
+		<div class="flex-1 text-right text-2xl text-zinc-400 drop-shadow-md sepia">
 			<div>{owner}</div>
 			<div class="text-xs">{id}</div>
 		</div>
-		<div class="flex-1 text-xs text-amber-400 drop-shadow-md">{expiry}</div>
+		<div class="flex-1 text-xs text-zinc-400 drop-shadow-md sepia">{expiry}</div>
 	</div>
 
 	<div class="pointer-events-none absolute bottom-0 right-0 p-4">
-		<div class="text-xs text-amber-400/80 drop-shadow-md">{org}</div>
+		<div class="text-xs text-zinc-400/80 drop-shadow-md sepia">{org}</div>
 	</div>
 
 	<div
