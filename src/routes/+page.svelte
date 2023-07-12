@@ -9,7 +9,7 @@
 	let owner = ((browser && $page.url.searchParams.get("owner")) ?? "Jacob Lin") || "";
 	let id = ((browser && $page.url.searchParams.get("id")) ?? "41047029S") || "";
 	let expiry = ((browser && $page.url.searchParams.get("expiry")) ?? "2023.07 ~ 2024.06") || "";
-	let font = ((browser && $page.url.searchParams.get("font")) ?? "Dancing Script") || "";
+	let font = ((browser && $page.url.searchParams.get("font")) ?? "Foldit") || "";
 </script>
 
 <svelte:head>

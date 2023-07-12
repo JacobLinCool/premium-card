@@ -10,7 +10,7 @@
 	export let owner = "Jacob Lin";
 	export let id = "41047029S";
 	export let expiry = "2023.07 ~ 2024.06";
-	export let font = "Dancing Script";
+	export let font = "Foldit";
 
 	let card: HTMLDivElement;
 	let light: HTMLDivElement;
