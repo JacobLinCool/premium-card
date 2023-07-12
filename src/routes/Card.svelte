@@ -10,6 +10,7 @@
 	export let owner = "Jacob Lin";
 	export let id = "41047029S";
 	export let expiry = "2023.07 ~ 2024.06";
+	export let font = "Dancing Script";
 
 	let card: HTMLDivElement;
 	let light: HTMLDivElement;
@@ -56,16 +57,18 @@
 	}
 </script>
 
-<link
-	href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
-	rel="stylesheet"
-/>
+{#if font}
+	<link
+		href="https://fonts.googleapis.com/css2?family={font.replace(/\s/, '+')}&display=swap"
+		rel="stylesheet"
+	/>
+{/if}
 
 <div
 	bind:this={card}
 	class="flex h-48 w-80 cursor-none select-none flex-col items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-zinc-800 to-zinc-900 shadow-lg"
 	class:hidden={!ready}
-	style="transform: {$transform}; font-family: 'Dancing Script', cursive;"
+	style="transform: {$transform}; font-family: '{font}', cursive;"
 >
 	<div class="pointer-events-none absolute left-0 top-0 p-4">
 		<div class="text-lg text-amber-400/80 drop-shadow-md">{membership}</div>
