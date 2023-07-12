@@ -10,6 +10,7 @@
 	let id = ((browser && $page.url.searchParams.get("id")) ?? "41047029S") || "";
 	let expiry = ((browser && $page.url.searchParams.get("expiry")) ?? "2023.07 ~ 2024.06") || "";
 	let font = ((browser && $page.url.searchParams.get("font")) ?? "Foldit") || "";
+	let color = parseInt((browser && $page.url.searchParams.get("color")) || "0") || 0;
 </script>
 
 <svelte:head>
@@ -18,6 +19,6 @@
 
 <div class="flex h-full w-full items-center justify-center bg-zinc-950">
 	<a href="https://github.com/JacobLinCool/premium-card" target="_blank" class="contents">
-		<Card {membership} {org} {owner} {id} {expiry} {font} />
+		<Card {membership} {org} {owner} {id} {expiry} {font} {color} />
 	</a>
 </div>
