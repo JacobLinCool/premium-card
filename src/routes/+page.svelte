@@ -15,6 +15,9 @@
 
 <svelte:head>
 	<title>Premium Card</title>
+	<meta name="description" content="Premium Card" />
+	<meta name="og:image" content="https://jacoblincool.github.io/premium-card/screenshot.png" />
+	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
 <div class="flex h-full w-full items-center justify-center bg-zinc-950">
